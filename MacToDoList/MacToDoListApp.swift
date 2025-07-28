@@ -1,17 +1,17 @@
 //
-//  ToDoListApp.swift
-//  ToDoList
+//  MacToDoListApp.swift
+//  MacToDoList
 //
+//  Created by mac on 7/28/25.
 //
 
 import SwiftUI
 
 @main
-struct ToDoListApp: App {
+struct MacToDoListApp: App {
     var body: some Scene {
         WindowGroup {
             TasksView()
-                .preferredColorScheme(.light)
         }
     }
 }

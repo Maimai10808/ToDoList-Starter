@@ -1,8 +1,9 @@
 //
 //  TaskDetailView.swift
-//  ToDoList
+//  MacToDoList
 //
-
+//  Created by mac on 7/28/25.
+//
 
 import SwiftUI
 
@@ -39,3 +40,4 @@ struct TaskDetailView: View {
 #Preview {
     TaskDetailView(task: .constant(Task(title: "Test", priority: .urgent, isComplete: false)))
 }
+

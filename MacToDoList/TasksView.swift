@@ -1,6 +1,8 @@
 //
 //  TasksView.swift
-//  ToDoList
+//  MacToDoList
+//
+//  Created by mac on 7/28/25.
 //
 
 import SwiftUI
@@ -44,16 +46,6 @@ struct TasksView: View {
             })
             .toolbar {
                 
-                #if os(iOS)
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
-                        addTasks = true
-                    }, label: {
-                        Image(systemName: "plus")
-                            .foregroundStyle(Color.black)
-                    })
-                }
-                #elseif os(macOS)
                 ToolbarItem {
                     Button(action: {
                         addTasks = true
@@ -62,8 +54,6 @@ struct TasksView: View {
                             .foregroundStyle(Color.black)
                     })
                 }
-                
-                #endif
             }
         }
     }
